@@ -2,9 +2,9 @@ N=int(input())
 temp=N
 rev=0
 while(N<=1000):
-    rem=n%10
+    rem=N%10
     rev=rev*10+rem
-    n=n//10
+    N=N//10
 if(temp==rev):
     print("yes")
 else:
