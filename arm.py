@@ -1,11 +1,11 @@
-num = int(input())
+N = int(input())
+l = len(str(N))
 sum = 0
-temp = num
-while temp <= 1000:
-   digit = temp % 10
-   sum = sum + (digit ** 3)
-   temp = temp//10
-if num == sum:
-   print("yes")
+t = N
+while(t != 0 and t <=1000):
+	sum = sum + ((t % 10) ** l)
+	t = t // 10
+if sum == N:
+	print("yes")
 else:
-   print("no")
+	print("no")
